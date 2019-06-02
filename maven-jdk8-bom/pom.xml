@@ -23,8 +23,10 @@
         <!-- fixed -->
         <log4j2.version>2.9.1</log4j2.version>
         <slf4j.version>1.7.26</slf4j.version>
-    </properties>
 
+
+        <spring.version>4.3.24.RELEASE</spring.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -53,7 +55,29 @@
                 <artifactId>log4j-api</artifactId>
                 <version>${log4j2.version}</version>
             </dependency>
-            <!-- 日志相关 -->
+            <!-- /日志相关 -->
+
+            <!-- spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <!-- /spring -->
 
         </dependencies>
     </dependencyManagement>
