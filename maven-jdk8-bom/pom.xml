@@ -32,7 +32,6 @@
 
     <dependencyManagement>
         <dependencies>
-
             <!-- 测试相关 -->
             <dependency>
                 <groupId>junit</groupId>
@@ -71,23 +70,11 @@
             <!-- spring -->
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
+                <artifactId>spring-framework-bom</artifactId>
                 <version>${spring.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-test</artifactId>
-                <version>${spring.version}</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context-support</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
             <!-- /spring -->
 
         </dependencies>
