@@ -28,10 +28,13 @@
         <slf4j.version>1.7.26</slf4j.version>
 
         <spring.version>4.3.24.RELEASE</spring.version>
+
+        <mybatis.version>3.5.1</mybatis.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
             <!-- 测试相关 -->
             <dependency>
                 <groupId>junit</groupId>
@@ -76,6 +79,13 @@
                 <scope>import</scope>
             </dependency>
             <!-- /spring -->
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
