@@ -30,6 +30,9 @@
         <spring.version>4.3.24.RELEASE</spring.version>
 
         <mybatis.version>3.5.1</mybatis.version>
+        <commons-lang3.version>3.9</commons-lang3.version>
+        <h2.version>1.4.199</h2.version>
+        <derby.version>10.14.2.0</derby.version>
     </properties>
 
     <dependencyManagement>
@@ -79,6 +82,12 @@
 
             <dependency>
                 <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
                 <version>${spring.version}</version>
                 <scope>test</scope>
@@ -97,6 +106,35 @@
                 <version>${mybatis.version}</version>
             </dependency>
 
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!-- 数据源驱动 -->
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.derby</groupId>
+                <artifactId>derby</artifactId>
+                <version>${derby.version}</version>
+            </dependency>
+
+
+            <!-- /数据源驱动 -->
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.1</version>
+                <scope>provided</scope>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
