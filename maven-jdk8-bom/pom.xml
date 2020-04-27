@@ -20,7 +20,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
 
-
         <junit.version>4.12</junit.version>
 
         <!-- fixed -->
@@ -30,9 +29,21 @@
         <spring.version>4.3.24.RELEASE</spring.version>
 
         <mybatis.version>3.5.1</mybatis.version>
+        <tkmybatis.version>2.1.5</tkmybatis.version>
+        <pagehelper.version>1.2.11</pagehelper.version>
+
         <commons-lang3.version>3.9</commons-lang3.version>
+        <commons-io.version>2.6</commons-io.version>
+
         <h2.version>1.4.199</h2.version>
         <derby.version>10.14.2.0</derby.version>
+
+        <swagger.version>2.9.2</swagger.version>
+        <servlet.version>4.0.1</servlet.version>
+
+        <lombok.version>1.18.12</lombok.version>
+        <toolkit.version>1.0.3</toolkit.version>
+
     </properties>
 
     <dependencyManagement>
@@ -83,18 +94,36 @@
             </dependency>
             <!-- /spring -->
 
-            <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis</artifactId>
-                <version>${mybatis.version}</version>
-            </dependency>
-
-
+            <!-- commons -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+            <!-- /commons -->
+
+            <!-- mybatis -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${tkmybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+            <!-- /mybatis -->
 
             <!-- 数据源驱动 -->
             <dependency>
@@ -108,17 +137,44 @@
                 <artifactId>derby</artifactId>
                 <version>${derby.version}</version>
             </dependency>
-
-
             <!-- /数据源驱动 -->
 
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
-                <version>4.0.1</version>
+                <version>${servlet.version}</version>
                 <scope>provided</scope>
             </dependency>
 
+
+            <!-- swagger -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-core</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <!-- /swagger -->
+
+            <!-- lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <!-- /lombok -->
+
+            <!-- toolkit -->
+            <dependency>
+                <groupId>cn.chenzw.toolkit</groupId>
+                <artifactId>toolkit</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
+            <!-- /toolkit -->
         </dependencies>
     </dependencyManagement>
 
