@@ -48,6 +48,15 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- springboot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.1.5.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- /springboot -->
 
             <!-- 测试相关 -->
             <dependency>
