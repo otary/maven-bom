@@ -159,7 +159,7 @@
             <!-- swagger -->
             <dependency>
                 <groupId>io.springfox</groupId>
-                <artifactId>springfox-core</artifactId>
+                <artifactId>springfox-swagger2</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
             <dependency>
