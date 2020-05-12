@@ -38,6 +38,8 @@
         <h2.version>1.4.199</h2.version>
         <derby.version>10.14.2.0</derby.version>
 
+        <httpclient.version>4.5.12</httpclient.version>
+
         <swagger.version>2.9.2</swagger.version>
         <servlet.version>4.0.1</servlet.version>
 
@@ -156,6 +158,14 @@
             </dependency>
 
 
+            <!-- httpclient -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <!-- /httpclient -->
+
             <!-- swagger -->
             <dependency>
                 <groupId>io.springfox</groupId>
@@ -184,6 +194,7 @@
                 <version>${toolkit.version}</version>
             </dependency>
             <!-- /toolkit -->
+
         </dependencies>
     </dependencyManagement>
 
