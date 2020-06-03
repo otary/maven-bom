@@ -47,6 +47,7 @@
         <lombok.version>1.18.12</lombok.version>
         <toolkit.version>1.0.3</toolkit.version>
 
+        <dozer.version>5.5.1</dozer.version>
     </properties>
 
     <dependencyManagement>
@@ -201,6 +202,13 @@
             </dependency>
             <!-- /toolkit -->
 
+            <!-- dozer -->
+            <dependency>
+                <groupId>net.sf.dozer</groupId>
+                <artifactId>dozer-spring</artifactId>
+                <version>${dozer.version}</version>
+            </dependency>
+            <!-- /dozer -->
         </dependencies>
     </dependencyManagement>
 
