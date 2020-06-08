@@ -27,6 +27,7 @@
         <slf4j.version>1.7.26</slf4j.version>
 
         <spring.version>4.3.24.RELEASE</spring.version>
+        <aspectjweaver.version>1.9.4</aspectjweaver.version>
 
         <mybatis.version>3.5.1</mybatis.version>
         <mybatis.springboot.version>2.1.2</mybatis.springboot.version>
@@ -62,6 +63,13 @@
                 <version>2.1.5.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectjweaver.version}</version>
+                <scope>provided</scope>
             </dependency>
             <!-- /springboot -->
 
