@@ -158,6 +158,11 @@
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${pagehelper.version}</version>
             </dependency>
+            <dependency>
+                <groupId>cn.chenzw.mybatis</groupId>
+                <artifactId>mybatis-ext2</artifactId>
+                <version>1.0.0</version>
+            </dependency>
             <!-- /mybatis -->
 
             <!-- 数据源驱动 -->
