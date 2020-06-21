@@ -40,6 +40,7 @@
 
         <!-- commons -->
         <commons-lang3.version>3.9</commons-lang3.version>
+        <commons-lang.version>2.6</commons-lang.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-collection4.version>4.4</commons-collection4.version>
         <!-- /commons -->
@@ -155,6 +156,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${commons-lang.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
