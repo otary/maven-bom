@@ -22,6 +22,8 @@
 
         <junit.version>4.12</junit.version>
 
+        <jjwt.version>0.9.1</jjwt.version>
+
         <!-- fixed -->
         <log4j2.version>2.9.1</log4j2.version>
         <slf4j.version>1.7.26</slf4j.version>
@@ -105,6 +107,14 @@
                 <version>${spring-boot-admin.version}</version>
             </dependency>
             <!-- /springboot -->
+
+            <!-- security -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <!-- /security-->
 
             <!-- 测试相关 -->
             <dependency>
