@@ -63,7 +63,7 @@
         <lombok.version>1.18.12</lombok.version>
         <toolkit.version>1.0.3</toolkit.version>
         <dozer.version>5.5.1</dozer.version>
-
+        <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
     </properties>
 
     <dependencyManagement>
@@ -239,7 +239,11 @@
                 <version>${servlet.version}</version>
                 <scope>provided</scope>
             </dependency>
-
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
 
             <!-- httpclient -->
             <dependency>
