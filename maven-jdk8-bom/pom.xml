@@ -6,7 +6,7 @@
 
     <groupId>cn.chenzw.bom</groupId>
     <artifactId>maven-jdk8-bom</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
 
     <name>maven-jdk8-bom</name>
@@ -125,6 +125,24 @@
                 <version>${spring-boot-admin.version}</version>
             </dependency>
             <!-- /springboot -->
+
+            <!-- springcloud -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- /springcloud -->
 
             <!-- security -->
             <dependency>
