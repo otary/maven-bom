@@ -6,7 +6,7 @@
 
     <groupId>cn.chenzw.bom</groupId>
     <artifactId>maven-jdk8-bom</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
 
     <name>maven-jdk8-bom</name>
@@ -21,19 +21,24 @@
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
 
         <junit.version>4.12</junit.version>
+        <hamcrest-all.version>1.3</hamcrest-all.version>
 
+        <!-- security认证 -->
+        <spring-security.version>5.2.8.RELEASE</spring-security.version>
+        <spring-security-oauth2.version>2.5.1.RELEASE</spring-security-oauth2.version>
         <jjwt.version>0.9.1</jjwt.version>
+        <shiro.version>1.7.1</shiro.version>
+        <!-- /security认证 -->
 
         <!-- fixed -->
         <log4j2.version>2.9.1</log4j2.version>
         <slf4j.version>1.7.26</slf4j.version>
 
         <!-- spring -->
+        <spring-framework.version>5.2.8.RELEASE</spring-framework.version>
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
         <spring-boot.version>2.3.3.RELEASE</spring-boot.version>
-        <spring.version>5.2.8.RELEASE</spring.version>
-        <spring-security-test.version>5.2.8.RELEASE</spring-security-test.version>
         <spring-boot-admin.version>2.3.0</spring-boot-admin.version>
         <aspectjweaver.version>1.9.6</aspectjweaver.version>
         <!-- /spring -->
@@ -43,6 +48,7 @@
         <mybatis.springboot.version>2.1.2</mybatis.springboot.version>
         <tkmybatis.version>2.1.5</tkmybatis.version>
         <pagehelper.version>1.2.11</pagehelper.version>
+        <mybatis-ext2.version>1.0.0</mybatis-ext2.version>
         <!-- /mybatis -->
 
         <!-- commons -->
@@ -50,6 +56,7 @@
         <commons-lang.version>2.6</commons-lang.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-collection4.version>4.4</commons-collection4.version>
+        <commons-net.version>3.8.0</commons-net.version>
         <!-- /commons -->
 
         <!-- datasource -->
@@ -70,6 +77,12 @@
         <toolkit.version>1.0.3</toolkit.version>
         <dozer.version>5.5.1</dozer.version>
         <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
+
+        <!-- json -->
+        <guava.version>30.1.1-jre</guava.version>
+        <!-- /json -->
+
+
     </properties>
 
     <!-- 云效仓库 -->
@@ -87,7 +100,8 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- springboot -->
+
+            <!-- pom -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -96,37 +110,6 @@
                 <scope>import</scope>
             </dependency>
 
-            <dependency>
-                <groupId>org.aspectj</groupId>
-                <artifactId>aspectjweaver</artifactId>
-                <version>${aspectjweaver.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-test</artifactId>
-                <version>${spring-security-test.version}</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-server</artifactId>
-                <version>${spring-boot-admin.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-server-ui</artifactId>
-                <version>${spring-boot-admin.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-client</artifactId>
-                <version>${spring-boot-admin.version}</version>
-            </dependency>
-            <!-- /springboot -->
-
-            <!-- springcloud -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -142,21 +125,85 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- /springcloud -->
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring-framework.version}</version>
+                <type>pom</type>
+            </dependency>
+            <!-- /pom -->
+
+            <!-- spring -->
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectjweaver.version}</version>
+            </dependency>
+
+            <!-- /spring -->
+
+            <!-- spring-boot -->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <!-- /spring-boot -->
 
             <!-- security -->
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-test</artifactId>
+                <version>${spring-security.version}</version>
+                <scope>test</scope>
+            </dependency>
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
                 <version>${jjwt.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-core</artifactId>
+                <version>${spring-security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>${spring-security-oauth2.version}</version>
+            </dependency>
             <!-- /security-->
+
+            <!-- shiro -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <!-- /shiro -->
 
             <!-- 测试相关 -->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-all</artifactId>
+                <version>${hamcrest-all.version}</version>
                 <scope>test</scope>
             </dependency>
             <!-- /测试相关 -->
@@ -187,16 +234,6 @@
             </dependency>
             <!-- /日志相关 -->
 
-            <!-- spring -->
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-framework-bom</artifactId>
-                <version>${spring.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- /spring -->
-
             <!-- commons -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
@@ -213,11 +250,15 @@
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-collections4</artifactId>
                 <version>${commons-collection4.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>${commons-net.version}</version>
             </dependency>
             <!-- /commons -->
 
@@ -245,7 +286,7 @@
             <dependency>
                 <groupId>cn.chenzw.mybatis</groupId>
                 <artifactId>mybatis-ext2</artifactId>
-                <version>1.0.0</version>
+                <version>${mybatis-ext2.version}</version>
             </dependency>
             <!-- /mybatis -->
 
@@ -267,19 +308,30 @@
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
             <!-- /数据源驱动 -->
 
+
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
+
+
+            <!-- servlet -->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${servlet.version}</version>
                 <scope>provided</scope>
             </dependency>
-            <dependency>
-                <groupId>org.hibernate.validator</groupId>
-                <artifactId>hibernate-validator</artifactId>
-                <version>${hibernate-validator.version}</version>
-            </dependency>
+            <!-- /servlet -->
 
             <!-- httpclient -->
             <dependency>
@@ -340,6 +392,14 @@
                 <version>${dozer.version}</version>
             </dependency>
             <!-- /dozer -->
+
+            <!-- json -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <!--/json -->
         </dependencies>
     </dependencyManagement>
 
