@@ -83,11 +83,15 @@
 
         <!-- json -->
         <guava.version>30.1.1-jre</guava.version>
+        <jsoup.version>1.10.3</jsoup.version>
+        <json-path.version>2.4.0</json-path.version>
         <!-- /json -->
 
         <!-- 其他 -->
         <thumbnailator.version>0.4.14</thumbnailator.version>
         <!-- /其他 -->
+
+        <minio.version>7.1.0</minio.version>
     </properties>
 
     <!-- 云效仓库 -->
@@ -145,7 +149,6 @@
                 <artifactId>aspectjweaver</artifactId>
                 <version>${aspectjweaver.version}</version>
             </dependency>
-
             <!-- /spring -->
 
             <!-- spring-boot -->
@@ -404,7 +407,26 @@
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>${jsoup.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jayway.jsonpath</groupId>
+                <artifactId>json-path</artifactId>
+                 <version>${json-path.version}</version>
+            </dependency>
             <!--/json -->
+
+            <!-- minio -->
+            <dependency>
+                <groupId>io.minio</groupId>
+                <artifactId>minio</artifactId>
+                <version>${minio.version}</version>
+            </dependency>
+            <!-- /minio -->
+
 
             <!-- 其他 -->
             <dependency>
