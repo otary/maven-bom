@@ -57,6 +57,7 @@
         <commons-io.version>2.6</commons-io.version>
         <commons-collection4.version>4.4</commons-collection4.version>
         <commons-net.version>3.8.0</commons-net.version>
+        <tika.version>1.26</tika.version>
         <!-- /commons -->
 
         <!-- datasource -->
@@ -268,6 +269,14 @@
                 <artifactId>commons-net</artifactId>
                 <version>${commons-net.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.apache.tika</groupId>
+                <artifactId>tika</artifactId>
+                <version>${tika.version}</version>
+                <type>pom</type>
+            </dependency>
+
             <!-- /commons -->
 
             <!-- mybatis -->
