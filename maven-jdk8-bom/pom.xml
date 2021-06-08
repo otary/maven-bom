@@ -49,6 +49,7 @@
         <tkmybatis.version>2.1.5</tkmybatis.version>
         <pagehelper.version>1.2.11</pagehelper.version>
         <mybatis-ext2.version>1.0.0</mybatis-ext2.version>
+        <sharding-jdbc.version>4.1.1</sharding-jdbc.version>
         <!-- /mybatis -->
 
         <!-- commons -->
@@ -295,6 +296,11 @@
                 <groupId>cn.chenzw.mybatis</groupId>
                 <artifactId>mybatis-ext2</artifactId>
                 <version>${mybatis-ext2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+                <version>${sharding-jdbc.version}</version>
             </dependency>
             <!-- /mybatis -->
 
