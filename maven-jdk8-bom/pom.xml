@@ -35,7 +35,7 @@
         <slf4j.version>1.7.26</slf4j.version>
 
         <!-- spring -->
-        <spring-framework.version>5.2.8.RELEASE</spring-framework.version>
+        <spring-framework.version>5.2.9.RELEASE</spring-framework.version>
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
         <spring-boot.version>2.3.3.RELEASE</spring-boot.version>
