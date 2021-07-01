@@ -89,8 +89,13 @@
         <json-path.version>2.4.0</json-path.version>
         <!-- /json -->
 
+        <!-- websocket -->
+        <java-websocket.version>1.4.1</java-websocket.version>
+        <!-- /websocket -->
+
         <!-- 其他 -->
         <thumbnailator.version>0.4.14</thumbnailator.version>
+        <zxing.version>3.4.0</zxing.version>
         <!-- /其他 -->
 
         <minio.version>7.1.0</minio.version>
@@ -442,12 +447,30 @@
             </dependency>
             <!-- /minio -->
 
+            <!-- websocket -->
+            <dependency>
+                <groupId>org.java-websocket</groupId>
+                <artifactId>Java-WebSocket</artifactId>
+                <version>${java-websocket.version}</version>
+            </dependency>
+            <!-- /websocket -->
 
             <!-- 其他 -->
             <dependency>
                 <groupId>net.coobird</groupId>
                 <artifactId>thumbnailator</artifactId>
                 <version>${thumbnailator.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>${zxing.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>javase</artifactId>
+                <version>${zxing.version}</version>
             </dependency>
             <!-- /其他 -->
         </dependencies>
