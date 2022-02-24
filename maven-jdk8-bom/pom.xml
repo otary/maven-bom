@@ -6,7 +6,7 @@
 
     <groupId>cn.chenzw.bom</groupId>
     <artifactId>maven-jdk8-bom</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
 
     <name>maven-jdk8-bom</name>
