@@ -98,6 +98,7 @@
         <!-- 其他 -->
         <thumbnailator.version>0.4.14</thumbnailator.version>
         <zxing.version>3.4.0</zxing.version>
+        <jsch.version>0.1.55</jsch.version>
         <!-- /其他 -->
 
         <minio.version>7.1.0</minio.version>
@@ -499,6 +500,12 @@
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-remote-driver</artifactId>
                 <version>${selenium-java.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.jcraft</groupId>
+                <artifactId>jsch</artifactId>
+                <version>${jsch.version}</version>
             </dependency>
             <!-- /其他 -->
         </dependencies>
