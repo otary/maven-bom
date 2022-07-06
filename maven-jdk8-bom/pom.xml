@@ -27,7 +27,7 @@
         <spring-security.version>5.2.8.RELEASE</spring-security.version>
         <spring-security-oauth2.version>2.5.1.RELEASE</spring-security-oauth2.version>
         <jjwt.version>0.9.1</jjwt.version>
-        <shiro.version>1.7.1</shiro.version>
+        <shiro.version>1.9.1</shiro.version>
         <!-- /security认证 -->
 
         <!-- fixed -->
