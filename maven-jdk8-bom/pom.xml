@@ -426,7 +426,7 @@
             <dependency>
                 <groupId>com.github.dozermapper</groupId>
                 <artifactId>dozer-spring-boot-starter</artifactId>
-                <version>${dozer-spring-boot.version>}</version>
+                <version>${dozer-spring-boot.version}</version>
             </dependency>
             <!-- /dozer -->
 
