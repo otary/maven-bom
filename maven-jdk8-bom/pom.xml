@@ -79,11 +79,13 @@
 
         <servlet.version>4.0.1</servlet.version>
         <lombok.version>1.18.12</lombok.version>
-        <toolkit.version>1.0.3</toolkit.version>
+        <toolkit.version>1.0.4</toolkit.version>
         <dozer.version>5.5.1</dozer.version>
         <dozer-spring-boot.version>6.5.2</dozer-spring-boot.version>
         <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
         <dom4j.version>2.1.3</dom4j.version>
+        <jaxen.version>2.0.0</jaxen.version>
+        <jaxb.version>2.3.1</jaxb.version>
         <selenium-java.version>4.1.2</selenium-java.version>
 
         <!-- json -->
@@ -100,6 +102,7 @@
         <thumbnailator.version>0.4.14</thumbnailator.version>
         <zxing.version>3.4.0</zxing.version>
         <jsch.version>0.1.55</jsch.version>
+        <bcprov-jdk15on.version>1.70</bcprov-jdk15on.version>
         <!-- /其他 -->
 
         <minio.version>7.1.0</minio.version>
@@ -410,6 +413,31 @@
                 <artifactId>toolkit</artifactId>
                 <version>${toolkit.version}</version>
             </dependency>
+            <dependency>
+                <groupId>cn.chenzw.toolkit</groupId>
+                <artifactId>toolkit-all</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.chenzw.toolkit</groupId>
+                <artifactId>toolkit-core</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.chenzw.toolkit</groupId>
+                <artifactId>toolkit-spring-boot-starter</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.chenzw.toolkit</groupId>
+                <artifactId>logging-spring-boot-starter</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.chenzw.toolkit</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
             <!-- /toolkit -->
 
             <!-- dozer -->
@@ -466,6 +494,12 @@
 
             <!-- 其他 -->
             <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk15on</artifactId>
+                <version>${bcprov-jdk15on.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>net.coobird</groupId>
                 <artifactId>thumbnailator</artifactId>
                 <version>${thumbnailator.version}</version>
@@ -485,6 +519,16 @@
                 <groupId>org.dom4j</groupId>
                 <artifactId>dom4j</artifactId>
                 <version>${dom4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jaxen</groupId>
+                <artifactId>jaxen</artifactId>
+                <version>${jaxen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>${jaxb.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
