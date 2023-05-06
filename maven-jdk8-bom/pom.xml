@@ -58,7 +58,7 @@
         <commons-lang.version>2.6</commons-lang.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-collection4.version>4.4</commons-collection4.version>
-        <commons-net.version>3.8.0</commons-net.version>
+        <commons-net.version>3.9.0</commons-net.version>
         <tika.version>1.26</tika.version>
         <!-- /commons -->
 
