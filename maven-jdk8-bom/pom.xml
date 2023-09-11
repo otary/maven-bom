@@ -75,6 +75,7 @@
 
         <!-- httpclient -->
         <httpclient.version>4.5.12</httpclient.version>
+        <httpclient5.version>5.2.1</httpclient5.version>
         <okhttp3.version>3.14.9</okhttp3.version>
         <!-- /httpclient -->
 
@@ -379,6 +380,11 @@
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents.client5</groupId>
+                <artifactId>httpclient5</artifactId>
+                <version>${httpclient5.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
