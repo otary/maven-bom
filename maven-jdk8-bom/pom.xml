@@ -450,6 +450,11 @@
                 <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
                 <version>${toolkit.version}</version>
             </dependency>
+            <dependency>
+                <groupId>cn.chenzw.toolkit</groupId>
+                <artifactId>toolkit-wp</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
             <!-- /toolkit -->
 
             <!-- dozer -->
