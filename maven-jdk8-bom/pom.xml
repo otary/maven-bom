@@ -79,17 +79,6 @@
         <okhttp3.version>3.14.9</okhttp3.version>
         <!-- /httpclient -->
 
-        <servlet.version>4.0.1</servlet.version>
-        <lombok.version>1.18.12</lombok.version>
-        <toolkit.version>1.0.4</toolkit.version>
-        <dozer.version>5.5.1</dozer.version>
-        <dozer-spring-boot.version>6.5.2</dozer-spring-boot.version>
-        <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
-        <dom4j.version>2.1.3</dom4j.version>
-        <jaxen.version>2.0.0</jaxen.version>
-        <jaxb.version>2.3.1</jaxb.version>
-        <selenium-java.version>4.1.2</selenium-java.version>
-
         <!-- json -->
         <guava.version>31.0.1-jre</guava.version>
         <jsoup.version>1.10.3</jsoup.version>
@@ -101,10 +90,26 @@
         <!-- /websocket -->
 
         <!-- 其他 -->
+        <elasticsearch.version>8.10.2</elasticsearch.version>
         <thumbnailator.version>0.4.14</thumbnailator.version>
         <zxing.version>3.4.0</zxing.version>
         <jsch.version>0.1.55</jsch.version>
         <bcprov-jdk15on.version>1.70</bcprov-jdk15on.version>
+        <servlet.version>4.0.1</servlet.version>
+        <lombok.version>1.18.12</lombok.version>
+        <toolkit.version>1.0.4</toolkit.version>
+        <dozer.version>5.5.1</dozer.version>
+        <dozer-spring-boot.version>6.5.2</dozer-spring-boot.version>
+        <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
+        <dom4j.version>2.1.3</dom4j.version>
+        <jaxen.version>2.0.0</jaxen.version>
+        <jaxb.version>2.3.1</jaxb.version>
+        <selenium-java.version>4.1.2</selenium-java.version>
+        <ikanalyzer.version>2012_u6</ikanalyzer.version>
+        <alipay-sdk-java.version>4.31.40.ALL</alipay-sdk-java.version>
+        <github-api.version>1.307</github-api.version>
+        <dnsjava.version>3.5.2</dnsjava.version>
+        <ip2region.version>1.7.2</ip2region.version>
         <!-- /其他 -->
 
         <minio.version>7.1.0</minio.version>
@@ -358,13 +363,11 @@
             </dependency>
             <!-- /数据源驱动 -->
 
-
             <dependency>
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate-validator.version}</version>
             </dependency>
-
 
             <!-- servlet -->
             <dependency>
@@ -501,6 +504,26 @@
             </dependency>
             <!-- /minio -->
 
+            <!-- elasticsearch -->
+            <dependency>
+                <groupId>io.github.iamazy.elasticsearch.dsl</groupId>
+                <artifactId>elasticsearch-sql-all</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+            <!-- /elasticsearch -->
+
             <!-- websocket -->
             <dependency>
                 <groupId>org.java-websocket</groupId>
@@ -547,6 +570,8 @@
                 <artifactId>jaxb-api</artifactId>
                 <version>${jaxb.version}</version>
             </dependency>
+
+            <!-- selenium -->
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-java</artifactId>
@@ -563,16 +588,42 @@
                 <version>${selenium-java.version}</version>
             </dependency>
             <dependency>
-
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-remote-driver</artifactId>
                 <version>${selenium-java.version}</version>
             </dependency>
-
+            <!-- /selenium -->
             <dependency>
                 <groupId>com.jcraft</groupId>
                 <artifactId>jsch</artifactId>
                 <version>${jsch.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.janeluo</groupId>
+                <artifactId>ikanalyzer</artifactId>
+                <version>${ikanalyzer.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>${alipay-sdk-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.kohsuke</groupId>
+                <artifactId>github-api</artifactId>
+                <version>${github-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dnsjava</groupId>
+                <artifactId>dnsjava</artifactId>
+                <version>${dnsjava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lionsoul</groupId>
+                <artifactId>ip2region</artifactId>
+                <version>${ip2region.version}</version>
             </dependency>
             <!-- /其他 -->
         </dependencies>
