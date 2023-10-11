@@ -41,6 +41,7 @@
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
         <spring-boot-admin.version>2.3.0</spring-boot-admin.version>
         <aspectjweaver.version>1.9.6</aspectjweaver.version>
+        <jasypt-spring-boot.version>3.0.5</jasypt-spring-boot.version>
         <!-- /spring -->
 
         <!-- mybatis -->
@@ -90,7 +91,7 @@
         <!-- /websocket -->
 
         <!-- 其他 -->
-        <elasticsearch.version>7.17.13</elasticsearch.version>
+        <elasticsearch.version>7.17.3</elasticsearch.version>
         <thumbnailator.version>0.4.14</thumbnailator.version>
         <zxing.version>3.4.0</zxing.version>
         <jsch.version>0.1.55</jsch.version>
@@ -110,6 +111,8 @@
         <github-api.version>1.307</github-api.version>
         <dnsjava.version>3.5.2</dnsjava.version>
         <ip2region.version>1.7.2</ip2region.version>
+        <xxl-job.version>2.3.1</xxl-job.version>
+        <snakeyaml.version>2.2</snakeyaml.version>
         <!-- /其他 -->
 
         <minio.version>7.1.0</minio.version>
@@ -189,6 +192,12 @@
                 <version>${spring-boot-admin.version}</version>
             </dependency>
             <!-- /spring-boot -->
+
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt-spring-boot.version}</version>
+            </dependency>
 
             <!-- security -->
             <dependency>
@@ -296,7 +305,6 @@
                 <version>${tika.version}</version>
                 <type>pom</type>
             </dependency>
-
             <!-- /commons -->
 
             <!-- mybatis -->
@@ -422,6 +430,14 @@
             </dependency>
             <!-- /lombok -->
 
+            <!-- xxl-job -->
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxl-job.version}</version>
+            </dependency>
+            <!-- /xxl-job -->
+
             <!-- toolkit -->
             <dependency>
                 <groupId>cn.chenzw.toolkit</groupId>
@@ -492,7 +508,7 @@
             <dependency>
                 <groupId>com.jayway.jsonpath</groupId>
                 <artifactId>json-path</artifactId>
-                 <version>${json-path.version}</version>
+                <version>${json-path.version}</version>
             </dependency>
             <!--/json -->
 
@@ -626,6 +642,13 @@
                 <version>${ip2region.version}</version>
             </dependency>
             <!-- /其他 -->
+
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
