@@ -112,7 +112,7 @@
         <dnsjava.version>3.5.2</dnsjava.version>
         <ip2region.version>1.7.2</ip2region.version>
         <xxl-job.version>2.3.1</xxl-job.version>
-        <snakeyaml.version>2.2</snakeyaml.version>
+        <snakeyaml.version>1.26</snakeyaml.version>
         <!-- /其他 -->
 
         <minio.version>7.1.0</minio.version>
@@ -641,13 +641,12 @@
                 <artifactId>ip2region</artifactId>
                 <version>${ip2region.version}</version>
             </dependency>
-            <!-- /其他 -->
-
             <dependency>
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
                 <version>${snakeyaml.version}</version>
             </dependency>
+            <!-- /其他 -->
 
         </dependencies>
     </dependencyManagement>
