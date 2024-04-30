@@ -115,6 +115,7 @@
         <snakeyaml.version>1.26</snakeyaml.version>
         <bouncycastle.version>1.78.1</bouncycastle.version>
         <minio.version>7.1.0</minio.version>
+
         <!-- /其他 -->
     </properties>
 
@@ -649,6 +650,16 @@
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcpg-jdk18on</artifactId>
+                <version>${bouncycastle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcpkix-jdk18on</artifactId>
+                <version>${bouncycastle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk18on</artifactId>
                 <version>${bouncycastle.version}</version>
             </dependency>
             <!-- /其他 -->
