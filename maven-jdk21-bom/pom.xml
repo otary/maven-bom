@@ -21,9 +21,9 @@
         <maven.compiler.compilerVersion>21</maven.compiler.compilerVersion>
 
         <!-- spring -->
-        <spring-cloud-alibaba.version>2023.0.3.3</spring-cloud-alibaba.version>
-        <spring-cloud.version>2023.0.3</spring-cloud.version>
-        <spring-boot.version>3.5.6</spring-boot.version>
+        <spring-cloud-alibaba.version>2025.0.0.0-preview</spring-cloud-alibaba.version>
+        <spring-cloud.version>2025.0.0</spring-cloud.version>
+        <spring-boot.version>3.3.13</spring-boot.version>
         <aspectjweaver.version>1.9.24</aspectjweaver.version>
         <jasypt-spring-boot.version>3.0.5</jasypt-spring-boot.version>
         <resilience4j.version>2.3.0</resilience4j.version>
@@ -68,7 +68,6 @@
         <h2.version>2.4.240</h2.version>
         <derby.version>10.17.1.0</derby.version>
         <postgresql.version>42.7.8</postgresql.version>
-        <mysql.version>9.4.0</mysql.version>
         <druid.version>1.1.22</druid.version>
         <!-- /datasource -->
 
@@ -338,12 +337,6 @@
                 <groupId>org.postgresql</groupId>
                 <artifactId>postgresql</artifactId>
                 <version>${postgresql.version}</version>
-                <scope>runtime</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.mysql</groupId>
-                <artifactId>mysql-connector-j</artifactId>
-                <version>${mysql.version}</version>
                 <scope>runtime</scope>
             </dependency>
 
@@ -663,4 +656,41 @@
             <!-- /其他 -->
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.9.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.4.2</version>
+                    <configuration>
+                        <archive>
+                            <manifestEntries>
+                                <Implementation-Title>${project.artifactId}</Implementation-Title>
+                                <Implementation-Version>${project.version}</Implementation-Version>
+                                <Implementation-Vendor>${project.parent.groupId}</Implementation-Vendor>
+                                <Implementation-Vendor-Id>${project.parent.groupId}</Implementation-Vendor-Id>
+                            </manifestEntries>
+                        </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.14.1</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <encoding>${maven.compiler.target}</encoding>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
