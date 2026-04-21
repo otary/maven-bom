@@ -21,12 +21,12 @@
         <maven.compiler.compilerVersion>21</maven.compiler.compilerVersion>
 
         <!-- spring -->
-        <spring-cloud-alibaba.version>2025.0.0.0-preview</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2025.0.0.0</spring-cloud-alibaba.version>
         <spring-cloud.version>2025.0.0</spring-cloud.version>
-        <spring-boot.version>3.3.13</spring-boot.version>
-        <aspectjweaver.version>1.9.24</aspectjweaver.version>
-        <jasypt-spring-boot.version>3.0.5</jasypt-spring-boot.version>
-        <resilience4j.version>2.3.0</resilience4j.version>
+        <spring-boot.version>3.5.13</spring-boot.version>
+        <aspectjweaver.version>1.9.25.1</aspectjweaver.version>
+        <jasypt-spring-boot.version>4.0.4</jasypt-spring-boot.version>
+        <resilience4j.version>2.4.0</resilience4j.version>
         <!-- /spring -->
 
         <!-- test -->
@@ -37,43 +37,43 @@
 
         <!-- 身份认证 -->
         <jjwt.version>0.13.0</jjwt.version>
-        <shiro.version>1.7.1</shiro.version>
+        <shiro.version>2.0.5</shiro.version>
         <!-- /身份认证 -->
 
         <!-- logging -->
-        <log4j2.version>2.25.2</log4j2.version>
+        <log4j2.version>2.25.4</log4j2.version>
         <slf4j.version>2.0.17</slf4j.version>
         <!-- /logging -->
 
         <!-- mybatis -->
         <mybatis.version>3.5.19</mybatis.version>
-        <mybatis.springboot.version>3.0.5</mybatis.springboot.version>
-        <tkmybatis.version>5.0.1</tkmybatis.version>
+        <mybatis.springboot.version>4.0.1</mybatis.springboot.version>
+        <tkmybatis.version>6.0.0</tkmybatis.version>
         <pagehelper.version>2.1.1</pagehelper.version>
         <mybatis-ext2.version>1.0.0</mybatis-ext2.version>
         <sharding-jdbc.version>4.1.1</sharding-jdbc.version>
-        <mybatis-plus.version>3.5.14</mybatis-plus.version>
-        <dynamic-datasource.version>4.3.1</dynamic-datasource.version>
+        <mybatis-plus.version>3.5.16</mybatis-plus.version>
+        <dynamic-datasource.version>4.5.0</dynamic-datasource.version>
         <!-- /mybatis -->
 
         <!-- commons -->
-        <commons-lang3.version>3.19.0</commons-lang3.version>
+        <commons-lang3.version>3.20.0</commons-lang3.version>
         <commons-io.version>2.20.0</commons-io.version>
         <commons-collection4.version>4.5</commons-collection4.version>
         <commons-net.version>3.12.0</commons-net.version>
-        <tika.version>3.2.3</tika.version>
+        <tika.version>3.3.0</tika.version>
         <!-- /commons -->
 
         <!-- datasource -->
         <h2.version>2.4.240</h2.version>
         <derby.version>10.17.1.0</derby.version>
         <postgresql.version>42.7.8</postgresql.version>
-        <druid.version>1.1.22</druid.version>
+        <druid.version>1.2.28</druid.version>
         <!-- /datasource -->
 
         <!-- 数据库版本管理 -->
         <flyway.version>11.14.0</flyway.version>
-        <liquibase.version>5.0.1</liquibase.version>
+        <liquibase.version>5.0.2</liquibase.version>
         <!-- /数据库版本管理 -->
 
         <!-- openapi-->
@@ -82,13 +82,13 @@
 
         <!-- httpclient -->
         <httpclient.version>4.5.14</httpclient.version>
-        <httpclient5.version>5.5.1</httpclient5.version>
-        <okhttp3.version>5.2.1</okhttp3.version>
+        <httpclient5.version>5.6.1</httpclient5.version>
+        <okhttp3.version>5.3.2</okhttp3.version>
         <!-- /httpclient -->
 
         <!-- json -->
-        <guava.version>33.5.0-jre</guava.version>
-        <jsoup.version>1.21.2</jsoup.version>
+        <guava.version>33.6.0-jre</guava.version>
+        <jsoup.version>1.22.1</jsoup.version>
         <json-path.version>2.9.0</json-path.version>
         <!-- /json -->
 
@@ -97,30 +97,30 @@
         <!-- /websocket -->
 
         <!-- 其他 -->
-        <elasticsearch.version>9.1.5</elasticsearch.version>
+        <elasticsearch.version>7.17.29</elasticsearch.version>
         <elasticsearch-sql.version>7.16.3</elasticsearch-sql.version>
         <thumbnailator.version>0.4.21</thumbnailator.version>
         <zxing.version>3.5.3</zxing.version>
-        <jsch.version>2.27.3</jsch.version>
+        <jsch.version>2.28.0</jsch.version>
         <servlet.version>6.1.0</servlet.version>
-        <lombok.version>1.18.42</lombok.version>
+        <lombok.version>1.18.44</lombok.version>
         <toolkit.version>1.0.4</toolkit.version>
         <dozer.version>7.0.0</dozer.version>
         <mapstruct.version>1.6.3</mapstruct.version>
-        <hibernate-validator.version>9.0.1.Final</hibernate-validator.version>
+        <hibernate-validator.version>8.0.3.Final</hibernate-validator.version>
         <dom4j.version>2.2.0</dom4j.version>
         <jaxen.version>2.0.0</jaxen.version>
-        <jaxb.version>4.0.4</jaxb.version>
+        <jaxb.version>4.0.5</jaxb.version>
         <selenium-java.version>4.36.0</selenium-java.version>
         <ikanalyzer.version>2012_u6</ikanalyzer.version>
         <alipay-sdk-java.version>4.40.467.ALL</alipay-sdk-java.version>
         <github-api.version>1.330</github-api.version>
-        <dnsjava.version>3.6.3</dnsjava.version>
-        <ip2region.version>3.1.0</ip2region.version>
-        <xxl-job.version>3.2.0</xxl-job.version>
-        <snakeyaml.version>2.5</snakeyaml.version>
-        <bouncycastle.version>1.82</bouncycastle.version>
-        <minio.version>8.6.0</minio.version>
+        <dnsjava.version>3.6.4</dnsjava.version>
+        <ip2region.version>3.3.6</ip2region.version>
+        <xxl-job.version>3.4.0</xxl-job.version>
+        <snakeyaml.version>2.6</snakeyaml.version>
+        <bouncycastle.version>1.84</bouncycastle.version>
+        <minio.version>9.0.0</minio.version>
         <!-- /其他 -->
     </properties>
 
@@ -240,7 +240,7 @@
 
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-slf4j-impl</artifactId>
+                <artifactId>log4j-slf4j2-impl</artifactId>
                 <version>${log4j2.version}</version>
             </dependency>
 
@@ -308,7 +308,7 @@
             </dependency>
             <dependency>
                 <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
             <dependency>
@@ -408,7 +408,7 @@
             <dependency>
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-                <version>2.8.13</version>
+                <version>2.8.16</version>
             </dependency>
             <!-- /openapi -->
 
