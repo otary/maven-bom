@@ -20,101 +20,109 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
 
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.2</junit.version>
         <hamcrest-all.version>1.3</hamcrest-all.version>
 
         <!-- security认证 -->
-        <spring-security.version>5.2.8.RELEASE</spring-security.version>
-        <spring-security-oauth2.version>2.5.1.RELEASE</spring-security-oauth2.version>
-        <jjwt.version>0.9.1</jjwt.version>
-        <shiro.version>1.7.1</shiro.version>
+        <spring-security.version>5.7.12</spring-security.version>
+        <spring-security-oauth2.version>2.5.2.RELEASE</spring-security-oauth2.version>
+        <jjwt.version>0.12.6</jjwt.version>
+        <shiro.version>1.13.0</shiro.version>
         <!-- /security认证 -->
 
         <!-- fixed -->
-        <log4j2.version>2.9.1</log4j2.version>
-        <slf4j.version>1.7.26</slf4j.version>
+        <log4j2.version>2.26.1</log4j2.version>
+        <slf4j.version>1.7.36</slf4j.version>
 
         <!-- spring -->
-        <spring-framework.version>5.2.8.RELEASE</spring-framework.version>
-        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.2.7.RELEASE</spring-cloud-alibaba.version>
-        <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
-        <spring-boot-admin.version>2.3.0</spring-boot-admin.version>
-        <aspectjweaver.version>1.9.6</aspectjweaver.version>
+        <spring-framework.version>5.3.39</spring-framework.version>
+        <spring-cloud.version>2021.0.9</spring-cloud.version>
+        <spring-cloud-alibaba.version>2021.0.6.0</spring-cloud-alibaba.version>
+        <spring-boot.version>2.7.18</spring-boot.version>
+        <spring-boot-admin.version>2.7.16</spring-boot-admin.version>
+        <aspectjweaver.version>1.9.22.1</aspectjweaver.version>
         <jasypt-spring-boot.version>3.0.5</jasypt-spring-boot.version>
         <!-- /spring -->
 
         <!-- mybatis -->
-        <mybatis.version>3.5.1</mybatis.version>
-        <mybatis.springboot.version>2.1.2</mybatis.springboot.version>
-        <tkmybatis.version>2.1.5</tkmybatis.version>
-        <pagehelper.version>1.2.11</pagehelper.version>
+        <mybatis.version>3.5.19</mybatis.version>
+        <mybatis.springboot.version>2.3.2</mybatis.springboot.version>
+        <tkmybatis.version>4.3.2</tkmybatis.version>
+        <pagehelper.version>1.4.7</pagehelper.version>
         <mybatis-ext2.version>1.0.0</mybatis-ext2.version>
         <sharding-jdbc.version>4.1.1</sharding-jdbc.version>
-        <mybatis-plus.version>3.5.3</mybatis-plus.version>
+        <mybatis-plus.version>3.5.17</mybatis-plus.version>
         <!-- /mybatis -->
 
         <!-- commons -->
-        <commons-lang3.version>3.9</commons-lang3.version>
+        <commons-lang3.version>3.20.0</commons-lang3.version>
         <commons-lang.version>2.6</commons-lang.version>
-        <commons-io.version>2.6</commons-io.version>
-        <commons-collection4.version>4.4</commons-collection4.version>
-        <commons-net.version>3.10.0</commons-net.version>
-        <tika.version>1.26</tika.version>
+        <commons-io.version>2.18.0</commons-io.version>
+        <commons-collection4.version>4.5.0</commons-collection4.version>
+        <commons-net.version>3.13.0</commons-net.version>
+        <tika.version>2.9.2</tika.version>
         <!-- /commons -->
 
         <!-- datasource -->
-        <h2.version>1.4.199</h2.version>
+        <h2.version>2.4.240</h2.version>
         <derby.version>10.14.2.0</derby.version>
-        <druid.version>1.1.22</druid.version>
+        <druid.version>1.2.28</druid.version>
         <!-- /datasource -->
 
         <!-- swagger-->
-        <swagger.version>2.9.2</swagger.version>
+        <swagger.version>3.0.0</swagger.version>
         <swagger-bootstrap-ui.version>1.9.6</swagger-bootstrap-ui.version>
         <!--/ swagger-->
 
         <!-- httpclient -->
-        <httpclient.version>4.5.12</httpclient.version>
-        <httpclient5.version>5.2.1</httpclient5.version>
-        <okhttp3.version>3.14.9</okhttp3.version>
+        <httpclient.version>4.5.14</httpclient.version>
+        <httpclient5.version>5.6.2</httpclient5.version>
+        <okhttp3.version>4.12.0</okhttp3.version>
         <!-- /httpclient -->
 
         <!-- json -->
-        <guava.version>31.0.1-jre</guava.version>
-        <jsoup.version>1.10.3</jsoup.version>
-        <json-path.version>2.4.0</json-path.version>
+        <guava.version>33.6.0-jre</guava.version>
+        <jsoup.version>1.22.2</jsoup.version>
+        <json-path.version>2.10.0</json-path.version>
         <!-- /json -->
 
         <!-- websocket -->
-        <java-websocket.version>1.4.1</java-websocket.version>
+        <java-websocket.version>1.5.7</java-websocket.version>
         <!-- /websocket -->
 
         <!-- 其他 -->
-        <elasticsearch.version>7.17.3</elasticsearch.version>
-        <thumbnailator.version>0.4.14</thumbnailator.version>
-        <zxing.version>3.4.0</zxing.version>
+        <elasticsearch.version>7.17.25</elasticsearch.version>
+        <thumbnailator.version>0.4.20</thumbnailator.version>
+        <zxing.version>3.5.3</zxing.version>
         <jsch.version>0.1.55</jsch.version>
         <bcprov-jdk15on.version>1.70</bcprov-jdk15on.version>
         <servlet.version>4.0.1</servlet.version>
-        <lombok.version>1.18.12</lombok.version>
+        <lombok.version>1.18.46</lombok.version>
         <toolkit.version>1.0.4</toolkit.version>
         <dozer.version>5.5.1</dozer.version>
-        <dozer-spring-boot.version>6.5.2</dozer-spring-boot.version>
-        <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
-        <dom4j.version>2.1.3</dom4j.version>
+        <dozer-spring-boot.version>7.0.0</dozer-spring-boot.version>
+        <hibernate-validator.version>6.2.5.Final</hibernate-validator.version>
+        <dom4j.version>2.2.0</dom4j.version>
         <jaxen.version>2.0.0</jaxen.version>
         <jaxb.version>2.3.1</jaxb.version>
-        <selenium-java.version>4.1.2</selenium-java.version>
+        <selenium-java.version>4.27.0</selenium-java.version>
         <ikanalyzer.version>2012_u6</ikanalyzer.version>
-        <alipay-sdk-java.version>4.31.40.ALL</alipay-sdk-java.version>
-        <github-api.version>1.307</github-api.version>
-        <dnsjava.version>3.5.2</dnsjava.version>
-        <ip2region.version>1.7.2</ip2region.version>
-        <xxl-job.version>2.3.1</xxl-job.version>
-        <snakeyaml.version>1.26</snakeyaml.version>
+        <alipay-sdk-java.version>4.39.79.ALL</alipay-sdk-java.version>
+        <github-api.version>1.327</github-api.version>
+        <dnsjava.version>3.6.3</dnsjava.version>
+        <ip2region.version>2.7.0</ip2region.version>
+        <xxl-job.version>2.4.2</xxl-job.version>
+        <snakeyaml.version>2.6</snakeyaml.version>
         <bouncycastle.version>1.78.1</bouncycastle.version>
-        <minio.version>7.1.0</minio.version>
+        <minio.version>8.5.14</minio.version>
+
+        <!-- 新方案共存（旧版仍保留，可按需选用） -->
+        <springdoc.version>1.7.0</springdoc.version>
+        <knife4j.version>4.4.0</knife4j.version>
+        <jsch-mwiede.version>0.2.20</jsch-mwiede.version>
+        <shardingsphere.version>5.2.1</shardingsphere.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <!-- /新方案共存 -->
 
         <!-- /其他 -->
     </properties>
@@ -663,6 +671,54 @@
                 <version>${bouncycastle.version}</version>
             </dependency>
             <!-- /其他 -->
+
+            <!-- 新方案共存（与旧版 swagger/jsch/sharding-jdbc/dozer 并存，按需选用） -->
+            <!-- OpenAPI 文档（替代 springfox swagger） -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-webmvc-core</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+
+            <!-- knife4j（替代 swagger-bootstrap-ui，4.4.0 为兼容 Spring Boot 2.x 最后版本） -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
+            <!-- jsch 维护版 fork（替代 com.jcraft:jsch，0.2.x 仍兼容 JDK 8） -->
+            <dependency>
+                <groupId>com.github.mwiede</groupId>
+                <artifactId>jsch</artifactId>
+                <version>${jsch-mwiede.version}</version>
+            </dependency>
+
+            <!-- ShardingSphere 5.x（替代 sharding-jdbc 4.1.1，5.2.1 为 JDK 8 最后版本，artifactId 变更） -->
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
+
+            <!-- MapStruct（替代 dozer，1.5.5.Final 兼容 JDK 8） -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- /新方案共存 -->
         </dependencies>
     </dependencyManagement>
 
@@ -672,7 +728,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>2.3.1.RELEASE</version>
+                    <version>2.7.18</version>
                     <executions>
                         <execution>
                             <goals>
