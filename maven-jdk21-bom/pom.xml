@@ -84,6 +84,7 @@
         <json-path.version>2.9.0</json-path.version>
         <snakeyaml.version>2.6</snakeyaml.version>
         <tika.version>3.3.2</tika.version>
+        <yauaa.version>8.1.1</yauaa.version>
 
         <!-- 对象映射与 XML -->
         <dozer.version>7.0.0</dozer.version>
@@ -115,6 +116,11 @@
         <zxing.version>3.5.3</zxing.version>
         <alipay-sdk-java.version>4.40.467.ALL</alipay-sdk-java.version>
         <fesod.version>2.0.2-incubating</fesod.version>
+        <aliyun-sms.version>4.6.0</aliyun-sms.version>
+        <jpush.version>3.7.7</jpush.version>
+        <firebase-admin.version>9.10.0</firebase-admin.version>
+        <tencent-sms.version>3.2.5</tencent-sms.version>
+        <getui-push.version>1.0.10.0</getui-push.version>
         <ikanalyzer.version>2012_u6</ikanalyzer.version>
 
         <!-- 内部组件 -->
@@ -302,6 +308,12 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
+            </dependency>
+            <!-- User Agent 解析 -->
+            <dependency>
+                <groupId>nl.basjes.parse.useragent</groupId>
+                <artifactId>yauaa</artifactId>
+                <version>${yauaa.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
@@ -737,6 +749,32 @@
             <dependency>
                 <groupId>org.apache.fesod</groupId>
                 <artifactId>fesod-sheet</artifactId>
+            </dependency>
+            <!-- 消息推送与短信 -->
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>dysmsapi20170525</artifactId>
+                <version>${aliyun-sms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.jpush.api</groupId>
+                <artifactId>jpush-client</artifactId>
+                <version>${jpush.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.firebase</groupId>
+                <artifactId>firebase-admin</artifactId>
+                <version>${firebase-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tencentcloudapi</groupId>
+                <artifactId>tencentcloud-sdk-java-sms</artifactId>
+                <version>${tencent-sms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.getui.push</groupId>
+                <artifactId>restful-sdk</artifactId>
+                <version>${getui-push.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.kohsuke</groupId>
