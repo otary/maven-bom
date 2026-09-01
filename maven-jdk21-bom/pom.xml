@@ -123,6 +123,9 @@
         <getui-push.version>1.0.10.0</getui-push.version>
         <ikanalyzer.version>2012_u6</ikanalyzer.version>
 
+        <!-- Redis 客户端 -->
+        <redisson.version>4.7.0</redisson.version>
+
         <!-- 内部组件 -->
         <toolkit.version>1.0.4</toolkit.version>
     </properties>
@@ -213,6 +216,10 @@
             </dependency>
 
             <!-- Spring 生态增强 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+            </dependency>
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
@@ -656,6 +663,26 @@
                 <groupId>org.java-websocket</groupId>
                 <artifactId>Java-WebSocket</artifactId>
                 <version>${java-websocket.version}</version>
+            </dependency>
+
+            <!-- Redis 客户端：Redisson Spring Boot Starter（Spring Boot 3.5.x 对齐 redisson-spring-data-35）
+                 子项目若使用 Spring Boot 3.5.x 非 4.1.x 默认绑定的 Spring Data Redis 版本，
+                 需在业务 pom 中排除 redisson-spring-data-41 并显式依赖 redisson-spring-data-35。 -->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.redisson</groupId>
+                        <artifactId>redisson-spring-data-41</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-data-35</artifactId>
+                <version>${redisson.version}</version>
             </dependency>
 
             <!-- 安全与加密补充 -->
