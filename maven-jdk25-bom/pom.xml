@@ -705,6 +705,11 @@
                 <version>${alipay-sdk-java.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.fesod</groupId>
+                <artifactId>fesod-sheet</artifactId>
+                <version>${fesod.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.aliyun</groupId>
                 <artifactId>dysmsapi20170525</artifactId>
                 <version>${aliyun-sms.version}</version>
