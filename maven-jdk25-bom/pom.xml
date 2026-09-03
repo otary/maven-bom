@@ -114,9 +114,12 @@
         <alipay-sdk-java.version>4.40.467.ALL</alipay-sdk-java.version>
         <fesod.version>2.0.2-incubating</fesod.version>
         <aliyun-sms.version>4.6.0</aliyun-sms.version>
+        <aliyun-dysmsapi2.version>1.0.12</aliyun-dysmsapi2.version>
         <jpush.version>3.7.7</jpush.version>
         <firebase-admin.version>9.10.0</firebase-admin.version>
         <tencent-sms.version>3.2.5</tencent-sms.version>
+        <huaweicloud-sms.version>3.1.214</huaweicloud-sms.version>
+        <pushy.version>0.15.6</pushy.version>
         <getui-push.version>1.0.10.0</getui-push.version>
         <ikanalyzer.version>2012_u6</ikanalyzer.version>
         <redisson.version>4.7.0</redisson.version>
@@ -715,6 +718,11 @@
                 <version>${aliyun-sms.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>dysmsapi20180501</artifactId>
+                <version>${aliyun-dysmsapi2.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>cn.jpush.api</groupId>
                 <artifactId>jpush-client</artifactId>
                 <version>${jpush.version}</version>
@@ -725,9 +733,19 @@
                 <version>${firebase-admin.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.eatthepath</groupId>
+                <artifactId>pushy</artifactId>
+                <version>${pushy.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.tencentcloudapi</groupId>
                 <artifactId>tencentcloud-sdk-java-sms</artifactId>
                 <version>${tencent-sms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaweicloud.sdk</groupId>
+                <artifactId>huaweicloud-sdk-smsapi</artifactId>
+                <version>${huaweicloud-sms.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.getui.push</groupId>
